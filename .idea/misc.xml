@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Documents/Code/Kotlin/Coding_Dojo/Technical_Exam/Abdullah/app/src/main/res/layout/activity_admin.xml" value="0.446875" />
+        <entry key="..\:/Documents/Code/Kotlin/Coding_Dojo/Technical_Exam/Abdullah/app/src/main/res/layout/activity_admin_sign_in.xml" value="0.412962962962963" />
+        <entry key="..\:/Documents/Code/Kotlin/Coding_Dojo/Technical_Exam/Abdullah/app/src/main/res/layout/activity_donor.xml" value="0.446875" />
+        <entry key="..\:/Documents/Code/Kotlin/Coding_Dojo/Technical_Exam/Abdullah/app/src/main/res/layout/activity_main.xml" value="0.446875" />
+        <entry key="..\:/Documents/Code/Kotlin/Coding_Dojo/Technical_Exam/Abdullah/app/src/main/res/layout/activity_receiver.xml" value="0.3188405797101449" />
+        <entry key="..\:/Documents/Code/Kotlin/Coding_Dojo/Technical_Exam/Abdullah/app/src/main/res/layout/activity_receiver_sign_up.xml" value="0.446875" />
+        <entry key="..\:/Documents/Code/Kotlin/Coding_Dojo/Technical_Exam/Abdullah/app/src/main/res/layout/activity_sign_up.xml" value="0.446875" />
+        <entry key="..\:/Documents/Code/Kotlin/Coding_Dojo/Technical_Exam/Abdullah/app/src/main/res/layout/item_row.xml" value="0.39814814814814814" />
+        <entry key="..\:/Documents/Code/Kotlin/Coding_Dojo/Technical_Exam/Abdullah/app/src/main/res/layout/item_row_admin.xml" value="0.44" />
+        <entry key="..\:/Documents/Code/Kotlin/Coding_Dojo/Technical_Exam/Abdullah/app/src/main/res/layout/item_row_donor.xml" value="0.44" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
