@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.widget.RadioButton
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.technicalexamandroid.data.Blood
@@ -21,18 +22,36 @@ class ReceiverSignUpActivity : AppCompatActivity() {
 
         bloodViewModel = ViewModelProvider(this).get(BloodViewModel::class.java)
 
-        binding.btnSignUp.setOnClickListener {
-            addDataToDatabase()
-            val intent = Intent(this, DonorActivity::class.java)
-            startActivity(intent)
+        binding.rgQuestion.setOnCheckedChangeListener { radioGroup, i ->
+            val radioBtn = binding.rgQuestion.checkedRadioButtonId
+            val yesBtn = binding.rbYes.id
+
+            if(radioBtn == yesBtn){
+                binding.btnSignUp.setOnClickListener {
+                    addDataToDatabase()
+                    val intent = Intent(this, DonorActivity::class.java)
+                    startActivity(intent)
+                }
+            } else {
+                binding.btnSignUp.setOnClickListener {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
+            }
         }
+
+//        binding.btnSignUp.setOnClickListener {
+//            addDataToDatabase()
+//            val intent = Intent(this, DonorActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 
     private fun addDataToDatabase() {
-        var name = "Name: " + binding.etName.text.toString()
-        var location = "Location: " + binding.etLocation.text.toString()
-        var mobile = "Mobile: " + binding.etMobile.text.toString()
-        var bloodType = "Blood Type: " + binding.etBloodType.text.toString()
+        val name = "Name: " + binding.etName.text.toString()
+        val location = "Location: " + binding.etLocation.text.toString()
+        val mobile = "Mobile: " + binding.etMobile.text.toString()
+        val bloodType = "Blood Type: " + binding.etBloodType.text.toString()
 
         if(checkInput(name, location, mobile, bloodType)){
             val donorData = Blood(0, name, location, mobile, bloodType)
